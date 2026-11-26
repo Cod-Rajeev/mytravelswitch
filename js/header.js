@@ -51,14 +51,12 @@ async function loadHeader() {
 
 function initializeHeader(container) {
   const header = container.querySelector("#siteHeader");
-  const desktopServices = container.querySelector("#desktopServices");
-  const desktopServicesButton = container.querySelector(
-    "#desktopServicesButton",
-  );
-  const desktopServicesMenu = container.querySelector("#desktopServicesMenu");
+  const desktopTours = container.querySelector("#desktopTours");
+  const desktopToursButton = container.querySelector("#desktopToursButton",);
+  const desktopToursMenu = container.querySelector("#desktopToursMenu");
   const menuButton = container.querySelector("#mobileMenuButton");
   const mobileMenu = container.querySelector("#mobileMenu");
-  const servicesButton = container.querySelector("#mobileServicesButton");
+  const servicesButton = container.querySelector("#mobileToursButton");
   const servicesMenu = container.querySelector("#mobileServicesMenu");
 
   if (!header) return;
@@ -99,55 +97,55 @@ function initializeHeader(container) {
 
   let desktopServicesPinned = false;
 
-  function setDesktopServicesMenu(open) {
-    if (!desktopServicesButton || !desktopServicesMenu) return;
+  function setdesktopToursMenu(open) {
+    if (!desktopToursButton || !desktopToursMenu) return;
 
-    desktopServicesButton.setAttribute("aria-expanded", String(open));
-    desktopServicesMenu.setAttribute("aria-hidden", String(!open));
-    desktopServicesMenu.inert = !open;
-    desktopServicesMenu.classList.toggle("invisible", !open);
-    desktopServicesMenu.classList.toggle("visible", open);
-    desktopServicesMenu.classList.toggle("translate-y-2", !open);
-    desktopServicesMenu.classList.toggle("translate-y-0", open);
-    desktopServicesMenu.classList.toggle("opacity-0", !open);
-    desktopServicesMenu.classList.toggle("opacity-100", open);
-    desktopServicesButton
+    desktopToursButton.setAttribute("aria-expanded", String(open));
+    desktopToursMenu.setAttribute("aria-hidden", String(!open));
+    desktopToursMenu.inert = !open;
+    desktopToursMenu.classList.toggle("invisible", !open);
+    desktopToursMenu.classList.toggle("visible", open);
+    desktopToursMenu.classList.toggle("translate-y-2", !open);
+    desktopToursMenu.classList.toggle("translate-y-0", open);
+    desktopToursMenu.classList.toggle("opacity-0", !open);
+    desktopToursMenu.classList.toggle("opacity-100", open);
+    desktopToursButton
       .querySelector(".services-chevron")
       ?.classList.toggle("rotate-[225deg]", open);
   }
 
-  desktopServices?.addEventListener("pointerenter", () => {
-    setDesktopServicesMenu(true);
+  desktopTours?.addEventListener("pointerenter", () => {
+    setdesktopToursMenu(true);
   });
 
-  desktopServices?.addEventListener("pointerleave", () => {
+  desktopTours?.addEventListener("pointerleave", () => {
     if (!desktopServicesPinned) {
-      setDesktopServicesMenu(false);
+      setdesktopToursMenu(false);
     }
   });
 
-  desktopServices?.addEventListener("focusin", () => {
-    setDesktopServicesMenu(true);
+  desktopTours?.addEventListener("focusin", () => {
+    setdesktopToursMenu(true);
   });
 
-  desktopServices?.addEventListener("focusout", (event) => {
+  desktopTours?.addEventListener("focusout", (event) => {
     if (
       !desktopServicesPinned &&
-      !desktopServices.contains(event.relatedTarget)
+      !desktopTours.contains(event.relatedTarget)
     ) {
-      setDesktopServicesMenu(false);
+      setdesktopToursMenu(false);
     }
   });
 
-  desktopServicesButton?.addEventListener("click", () => {
+  desktopToursButton?.addEventListener("click", () => {
     desktopServicesPinned = !desktopServicesPinned;
-    setDesktopServicesMenu(desktopServicesPinned);
+    setdesktopToursMenu(desktopServicesPinned);
   });
 
-  desktopServicesMenu?.querySelectorAll("a").forEach((link) => {
+  desktopToursMenu?.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       desktopServicesPinned = false;
-      setDesktopServicesMenu(false);
+      setdesktopToursMenu(false);
     });
   });
 
@@ -233,9 +231,9 @@ function initializeHeader(container) {
       setMobileMenu(false);
     }
 
-    if (desktopServices && !desktopServices.contains(event.target)) {
+    if (desktopTours && !desktopTours.contains(event.target)) {
       desktopServicesPinned = false;
-      setDesktopServicesMenu(false);
+      setdesktopToursMenu(false);
     }
   });
 
@@ -244,7 +242,7 @@ function initializeHeader(container) {
     if (event.key === "Escape") {
       setMobileMenu(false);
       desktopServicesPinned = false;
-      setDesktopServicesMenu(false);
+      setdesktopToursMenu(false);
     }
   });
 
@@ -256,7 +254,7 @@ function initializeHeader(container) {
         setMobileMenu(false);
       } else {
         desktopServicesPinned = false;
-        setDesktopServicesMenu(false);
+        setdesktopToursMenu(false);
       }
     },
     { passive: true },

@@ -2,7 +2,75 @@
     id="siteHeader"
     class="fixed inset-x-0 top-0 z-[9999] bg-white  shadow-xl backdrop-blur-xl transition-transform duration-500 ease-out"
 >
+
+        <!-- TOP MINI NAVBAR -->
+<div
+    id="topNavbar"
+    class="relative z-10 w-full h-9 bg-black/90 text-white border-b border-slate-800"
+>
+    <div class="mx-auto flex h-full w-full items-center justify-between gap-3 px-3 sm:px-6 lg:px-16">
+
+        <!-- LEFT CONTACT -->
+        <div class="flex min-w-0 items-center gap-3 sm:gap-6">
+
+            <!-- MOBILE -->
+            <a
+                href="tel:+918048094245"
+                class="flex shrink-0 items-center gap-1.5 text-[10px] sm:text-xs "
+            >
+                <i class="fa-solid fa-phone"></i>
+                <span class="hover:text-amber-400 transition">+91 8048094245</span>
+            </a>
+
+            <!-- EMAIL -->
+            <a
+                href="mailto:mytravelswitch@gmail.com"
+                class="flex min-w-0 items-center gap-1.5 text-[10px] sm:text-[13px]"
+            >
+                <i class="fa-solid fa-envelope shrink-0"></i>
+                <span class="truncate hover:text-amber-400 transition">mytravelswitch@gmail.com</span>
+            </a>
+
+        </div>
+
+        <!-- RIGHT SOCIAL ICONS -->
+        <div class="flex shrink-0 items-center gap-3 sm:gap-8">
+
+            
+            <a href="https://www.instagram.com/mytravelswitch"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Instagram"
+               class="text-white hover:text-amber-400 transition">
+                <i class="fa-brands fa-instagram text-sm sm:text-xl"></i>
+            </a>
+
+            <a href="https://www.facebook.com/mytravelswitch"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Facebook"
+               class="text-white hover:text-amber-400 transition">
+                <i class="fa-brands fa-facebook-f text-sm sm:text-xl"></i>
+            </a>
+
+            <a href="https://x.com/MtsPackage71470"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="X (Twitter)"
+               class="text-white hover:text-amber-400 transition">
+                <i class="fa-brands fa-x-twitter text-sm sm:text-xl"></i>
+            </a>
+
+        </div>
+
+    </div>
+</div>
     <div class="mx-auto max-w-[1400px] px-2 sm:px-6 lg:px-8">
+
+
+
+
+
 
         <!-- MAIN NAVBAR -->
         <div class="relative flex  items-center justify-between text-sm poppins-semibold text-gray-700">
@@ -16,7 +84,7 @@
                 <img
                     src="/images/logo.png"
                     alt="CSDO logo"
-                    class="block h-16 w-auto object-contain  md:h-20"
+                    class="block h-12 w-auto object-contain  md:h-16"
                 >
             </a>
 
@@ -25,30 +93,30 @@
                 class="hidden items-center gap-1 lg:flex"
                 aria-label="Main navigation"
             >
-                <a href="/" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-5 rounded-md">
+                <a href="/" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-4 rounded-md">
                     Home
                 </a>
 
-                  <a href="/ngo-csr.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-5 rounded-md ">
+                  <a href="/flights.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-4 rounded-md ">
                     Flights
                 </a>
 
                 
 
-                <a href="/hot" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-5 rounded-md ">
+                <a href="/hotels.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-4 rounded-md ">
                     Hotels
                 </a>
 
                 <!-- DESKTOP Tours  -->
-                <div id="desktopServices" class="group relative">
+                <div id="desktopTours" class="group relative">
                     <button
-                        id="desktopServicesButton"
+                        id="desktopToursButton"
                         type="button"
-                        class="flex  items-center gap-3 tracking-wider transition-colors hover:text-red-700/50 hover:bg-amber-600/30 p-2 px-5 rounded-md cursor-pointer"
-                        aria-controls="desktopServicesMenu"
+                        class="flex  items-center gap-3 tracking-wider transition-colors hover:text-blue-400 hover:bg-blue-600/10 p-2 px-5 rounded-md cursor-pointer"
+                        aria-controls="desktopToursMenu"
                         aria-expanded="false"
                     >
-                        Tours 
+                        Tours Packages
 
                         <span class="services-chevron h-2 w-2 rotate-45 border-b border-r border-current transition-transform duration-300" aria-hidden="true"></span>
                     </button>
@@ -63,109 +131,41 @@
 
 
                     <div
-                        id="desktopServicesMenu"
-                        class="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-2 rounded-xl border border-amber-700 bg-white p-2 opacity-0 shadow-2xl transition-all duration-300 text-gray-800 mt-2"
+                        id="desktopToursMenu"
+                        class="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-2 rounded-xl border border-blue-300 bg-white p-2 opacity-0 shadow-2xl transition-all duration-300 text-gray-800 mt-2"
                         aria-hidden="true"
                         inert
                     >
                         <!-- <div class="mb-2 h-0.5 rounded-full bg-amber-700"></div> -->
 
-                        <a href="/courses/candle-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 transition-all duration-300 ease-out hover:translate-x-1   hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Candle Making Course <span>→</span>
+                        <a href="/tours-packages/singapore-package.html" class="flex items-center justify-between rounded-lg px-4 py-2 transition-all duration-300 ease-out hover:translate-x-1   hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Singapore Package <span>→</span>
                         </a>
 
-                        <a href="/courses/soap-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Soap Making Course <span>→</span>
+                        <a href="/tours-packages/kerala-package.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Kerala Package <span>→</span>
                         </a>
 
-                        <a href="/courses/cosmetic-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Cosmetic Business Course <span>→</span>
+                        <a href="/tours-packages/europe-package.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Europe Package <span>→</span>
                         </a>
 
-                        <a href="/courses/makhana-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Makhana Business Course <span>→</span>
+                        <a href="/tours-packages/manali-package.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                           Manali Package <span>→</span>
                         </a>
 
-                        <a href="/courses/home-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Home Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/skin-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Skin Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/hair-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Hair Care Making Course <span>→</span>
-                        </a>
                     </div>
                 </div>
 
+
+                  <a href="/visa.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-4 rounded-md ">
+                    Visa
+                </a>
 
                 
-                <!-- DESKTOP Visa -->
-                <div id="desktopServices" class="group relative">
-                    <button
-                        id="desktopServicesButton"
-                        type="button"
-                        class="flex  items-center gap-3 tracking-wider transition-colors hover:text-red-700/50 hover:bg-amber-600/30 p-2 px-5 rounded-md cursor-pointer"
-                        aria-controls="desktopServicesMenu"
-                        aria-expanded="false"
-                    >
-                        Visa 
-
-                        <span class="services-chevron h-2 w-2 rotate-45 border-b border-r border-current transition-transform duration-300" aria-hidden="true"></span>
-                    </button>
-
-                    <!-- =================================================
-                     HOVER BRIDGE
-                ================================================== -->
-
-                <div
-                    class="absolute top-full left-0 w-full h-10"
-                ></div>
-
-
-                    <div
-                        id="desktopServicesMenu"
-                        class="invisible absolute left-1/2 top-full w-64 -translate-x-1/2 translate-y-2 rounded-xl border border-amber-700 bg-white p-2 opacity-0 shadow-2xl transition-all duration-300 text-gray-800 mt-2"
-                        aria-hidden="true"
-                        inert
-                    >
-                        <!-- <div class="mb-2 h-0.5 rounded-full bg-amber-700"></div> -->
-
-                        <a href="/courses/candle-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 transition-all duration-300 ease-out hover:translate-x-1   hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Candle Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/soap-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Soap Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/cosmetic-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Cosmetic Business Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/makhana-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Makhana Business Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/home-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Home Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/skin-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Skin Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/hair-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Hair Care Making Course <span>→</span>
-                        </a>
-                    </div>
-                </div>
-
               
 
-                <a href="/about-us.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-5 rounded-md ">
+                <a href="/about-us.html" class="relative flex  items-center tracking-wider  transition-colors hover:text-blue-400 hover:bg-blue-600/10 py-2 px-4 rounded-md ">
                     About Us
                 </a>
             </nav>
@@ -174,27 +174,28 @@
             <div class="flex shrink-0 items-center gap-2 sm:gap-3">
 
              
-<a
-    href="#contact-form"
-    id="contact-form"
-    class="group absolute left-1/2 inline-flex min-h-10 -translate-x-1/2 items-center justify-center gap-2 overflow-hidden rounded-md border border-amber-700 px-3 text-md poppins-bold tracking-wider   transition-all duration-300 ease-out hover:translate-x-[calc(-50%+4px)] hover:bg-amber-600/30  shadow-md shadow-amber-700 focus-visible:outline-2 focus-visible:outline-offset-4 sm:min-h-11 sm:px-4 lg:static lg:translate-x-0 lg:hover:translate-x-1"
->
-    <span class="whitespace-nowrap">Courses Enquiry</span>
 
-    <span
-        aria-hidden="true"
-        class="inline-block text-sm transition-transform duration-300 ease-out group-hover:translate-x-1"
-    >
-        →
-    </span>
+            
+<a
+    href="https://wa.me/918460188483?text=Hello%20MyTravelSwitch%2C%20I%20am%20interested%20in%20your%20travel%20services.%20I%20would%20like%20to%20know%20more%20about%20tour%20packages%2C%20hotel%20bookings%2C%20holiday%20destinations%2C%20and%20travel%20deals.%20Please%20share%20the%20details."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp Enquiry"
+    class="group absolute left-3/5 inline-flex min-h-8 -translate-x-1/2 items-center justify-center gap-2 overflow-hidden rounded-md border border-green-600 bg-green-600 px-4 py-2 text-white shadow-md shadow-green-900/20 transition-all duration-300 hover:bg-green-700 hover:shadow-lg hover:shadow-green-900/30 focus-visible:outline-2 focus-visible:outline-offset-4 sm:min-h-10 sm:px-4 lg:static lg:translate-x-0 "
+>
+    <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
+
+    <span class="whitespace-nowrap">WhatsApp </span>
 </a>
+
+
 
 
                 <!-- MOBILE HAMBURGER -->
                 <button
                     id="mobileMenuButton"
                     type="button"
-                    class="flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[5px] rounded-lg border border-amber-700 shadow-md shadow-amber-700 lg:hidden "
+                    class="flex h-9 w-10 shrink-0 flex-col items-center justify-center gap-[5px] rounded-lg border border-amber-700 shadow-md shadow-amber-700 lg:hidden "
                     aria-label="Open navigation menu"
                     aria-controls="mobileMenu"
                     aria-expanded="false"
@@ -209,29 +210,29 @@
         <!-- MOBILE NAVIGATION -->
         <div
             id="mobileMenu"
-            class="max-h-0 overflow-x-hidden overflow-y-auto opacity-0 transition-[max-height,opacity] duration-300 ease-in-out lg:hidden border-t border-amber-700 px-2"
+            class="max-h-0 overflow-x-hidden overflow-y-auto opacity-0 transition-[max-height,opacity] duration-300 ease-in-out lg:hidden border-t border-blue-500 px-2"
             aria-hidden="true"
             inert
         >
             <nav class="border-t border-white/10 py-3" aria-label="Mobile navigation">
 
-                <a href="/" class="block border-b border-white/5 py-3.5 text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500">
+                <a href="/" class="block p-3 rounded-md text-xs font-semibold uppercase tracking-wider">
                     Home
                 </a>
 
 
-                <!-- MOBILE SERVICES -->
+                <!-- MOBILE Tours Packages -->
                 <div class="border-b border-white/5">
 
                     <div>
                         <button
-                            id="mobileServicesButton"
+                            id="mobileToursButton"
                             type="button"
-                            class="flex min- w-full items-center justify-between py-3.5 text-left text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500"
+                            class="flex min- w-full items-center justify-between p-3 text-left text-xs font-semibold uppercase tracking-wider"
                             aria-controls="mobileServicesMenu"
                             aria-expanded="false"
                         >
-                            Courses
+                            Tours Packages
                             <span class="services-chevron h-2 w-2 rotate-45 border-b border-r border-current transition-transform duration-300" aria-hidden="true"></span>
                         </button>
                     </div>
@@ -243,52 +244,40 @@
                         inert
                     >
                         <div class="min-h-0 overflow-hidden">
-                         <a href="/courses/candle-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 transition-all duration-300 ease-out hover:translate-x-1   hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Candle Making Course <span>→</span>
+                         <a href="/courses/candle-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 transition-all duration-300 ease-out hover:translate-x-1   hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Singapore Package <span>→</span>
                         </a>
 
-                        <a href="/courses/soap-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Soap Making Course <span>→</span>
+                        <a href="/courses/soap-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Kerala Package <span>→</span>
                         </a>
 
-                        <a href="/courses/cosmetic-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Cosmetic Business Course <span>→</span>
+                        <a href="/courses/cosmetic-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Europe Package <span>→</span>
                         </a>
 
-                        <a href="/courses/makhana-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Makhana Business Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/home-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Home Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/skin-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Skin Care Making Course <span>→</span>
-                        </a>
-
-                        <a href="/courses/hair-care-making-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-red-700/50 hover:bg-amber-600/30 border-b border-amber-700">
-                            Hair Care Making Course <span>→</span>
+                        <a href="/courses/makhana-business-course.html" class="flex items-center justify-between rounded-lg px-4 py-2 mt-2 transition-all duration-300 ease-out hover:translate-x-1 hover:text-blue-400 hover:bg-blue-600/10 border-b border-blue-500">
+                            Manali Package <span>→</span>
                         </a>
                         </div>
                     </div>
                 </div>
 
-                <a href="/ngo-csr.html" class="block border-b border-white/5 py-3.5 text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500">
-                    NGO & CSR
+                <a href="/flights.html" class="block p-3 rounded-md text-xs font-semibold uppercase tracking-wider">
+                    Flights
                 </a>
 
                 
-                <a href="/about-us.html" class="block border-b border-white/5 py-3.5 text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500">
+                <a href="/hotels.html" class="block p-3 rounded-md text-xs font-semibold uppercase tracking-wider">
+                    Hotels
+                </a>
+
+                <a href="/visa.html" class="block p-3 rounded-md text-xs font-semibold uppercase tracking-wider">
+                    Visa
+                </a>
+
+                <a href="/about-us.html" class="block p-3 rounded-md text-xs font-semibold uppercase tracking-wider">
                     About Us
-                </a>
-
-                <a href="/contact-us.html" class="block py-3.5 text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500">
-                    Contact Us
-                </a>
-
-                <a href="/blog/blog.html" class="block py-3.5 text-xs font-semibold uppercase tracking-wider  transition-colors hover:text-red-500">
-                    Blogs
                 </a>
 
             </nav>
