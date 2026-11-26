@@ -1,0 +1,442 @@
+/* =========================================================
+   GOOGLE FONTS
+   THE DETAILING HANGER
+========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Inter:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+
+/* =========================================================
+   TAILWIND CSS
+========================================================= */
+
+@import "tailwindcss";
+
+
+/* =========================================================
+   DEFAULT BODY FONT
+   INTER
+   Body, Paragraphs, Forms, General Text
+========================================================= */
+/* Fonts: Inter body, Space Grotesk headings, Barlow Condensed automotive accent */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* =========================================================
+   SPACE GROTESK
+   Main Headings, Hero Headings, Premium Titles
+========================================================= */
+
+.space-grotesk-light {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.space-grotesk-regular {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-grotesk-medium {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.space-grotesk-semibold {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.space-grotesk-bold {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   INTER
+   Body, Paragraphs, Forms, Description
+========================================================= */
+
+.inter-thin {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.inter-extralight {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.inter-light {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inter-semibold {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter-extrabold {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.inter-black {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   INTER ITALIC
+========================================================= */
+
+.inter-thin-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.inter-extralight-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.inter-light-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.inter-regular-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.inter-medium-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.inter-semibold-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.inter-bold-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.inter-extrabold-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.inter-black-italic {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   BARLOW CONDENSED
+   Automotive Headings, Labels, Numbers, Pricing
+========================================================= */
+
+.barlow-thin {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.barlow-extralight {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.barlow-light {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.barlow-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.barlow-bold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.barlow-extrabold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.barlow-black {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   BARLOW CONDENSED ITALIC
+========================================================= */
+
+.barlow-thin-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.barlow-extralight-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.barlow-light-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.barlow-regular-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.barlow-medium-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.barlow-semibold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.barlow-bold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.barlow-extrabold-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.barlow-black-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   BEBAS NEUE
+   Display Font, Large Text, Automotive Accent
+   NOTE: Bebas Neue officially uses a single weight.
+========================================================= */
+
+.bebas-neue {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   BEBAS NEUE ITALIC
+   Browser can synthetically italicize when required.
+========================================================= */
+
+.bebas-neue-italic {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* =========================================================
+   POPPINS
+   Navbar, Buttons, UI, Small Headings
+========================================================= */
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   POPPINS ITALIC
+========================================================= */
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
