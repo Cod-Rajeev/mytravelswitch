@@ -14,12 +14,730 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
 
+
+     <!-- Fonts  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css">
+
+
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-    <!-- Common header automatically load hoga -->
+    <!-- Common header automatically loaded -->
     <div id="header"></div>
+
+    
+<!-- Flight HERO -->
+<section class="relative w-full overflow-hidden bg-black">
+
+    <!-- MOBILE HERO IMAGE -->
+    <img
+        src="/images/flight-mobail.png"
+        alt="My Travel Switch"
+        class="block md:hidden h-auto w-full"
+    >
+
+    <!-- TABLET & PC HERO IMAGE -->
+    <img
+        src="/images/flight-pc.png"
+        alt="My Travel Switch"
+        class="hidden md:block h-auto w-full object-contain"
+    >
+
+    <!-- GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-transparent"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="absolute inset-0 z-10 flex items-center">
+
+        <div class="flex w-full items-center justify-between gap-2 px-2 sm:gap-3 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+
+           
+            <!-- LEFT CONTENT -->
+            <div class="w-[51%] sm:w-[55%] md:w-[55%] text-white">
+            
+                <!-- SMALL TAGLINE -->
+                <div class="mb-2 sm:mb-4 flex items-center gap-2">
+                    <span class="h-px w-5 sm:w-9 bg-sky-400"></span>
+                
+                    <span class="text-[7px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">
+                        Flight Booking
+                    </span>
+                </div>
+            
+                <!-- MAIN HEADING -->
+                <h1 class="playfair-bold text-[20px] leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                
+                    Your Journey,
+                    <span class="block mt-1 text-sky-400">
+                        Above The
+                    </span>
+                    <span class="block mt-1">
+                        Ordinary.
+                    </span>
+                
+                </h1>
+            
+                <!-- MINIMAL DETAIL -->
+                <div class="mt-3 sm:mt-6 flex w-fit items-center gap-2 bg-black/40 rounded-md p-4 ">
+                    <i class="fa-solid fa-plane text-sky-400 text-[10px] sm:text-base"></i>
+                    <span class="text-[7px] sm:text-xs tracking-widest text-white/80 uppercase">
+                        Find Your Next Flight
+                    </span>
+                </div>
+            
+            </div>
+            
+
+
+            <!-- =========================================================
+                 RIGHT SIDE FLIGHT BOOKING ENQUIRY FORM
+            ========================================================= -->
+
+            <div class="w-[44%] sm:w-[38%] lg:w-[35%] max-w-md shrink-0">
+            
+                <div class="rounded-lg border border-white bg-white/10 p-2 shadow-2xl backdrop-blur-xl sm:rounded-2xl sm:p-4 lg:p-5">
+                
+                    <!-- FORM HEADING -->
+                    <div class="mb-1.5 sm:mb-4">
+                    
+                        <h3 class="text-[10px] sm:text-lg md:text-2xl playfair-bold text-white">
+                            <i class="fa-solid fa-plane-departure text-xs text-amber-500 sm:text-2xl"></i>
+                            Flight Enquiry
+                        </h3>
+                    
+                        <p class="mt-1 hidden text-sm text-gray-200 sm:block">
+                            Share your journey details to get flight options.
+                        </p>
+                    
+                    </div>
+                
+                
+                    <!-- FLIGHT ENQUIRY FORM -->
+                    <form id="travelEnquiryForm" class="space-y-1.5 sm:space-y-3">
+                    
+                        <!-- ROW 1: NAME + MOBILE -->
+                        <div class="grid grid-cols-2 gap-1.5 sm:gap-3">
+                        
+                            <!-- NAME -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelName"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-regular fa-user mr-1 text-sky-400"></i>
+                                    Name
+                            
+                                </label>
+                            
+                                <input
+                                    type="text"
+                                    id="travelName"
+                                    placeholder="Your name"
+                                    required
+                                    autocomplete="name"
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1.5 py-1 text-[8px] text-white placeholder-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        
+                            <!-- MOBILE -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelMobile"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-phone mr-1 text-sky-400"></i>
+                                    Mobile
+                            
+                                </label>
+                            
+                                <input
+                                    type="tel"
+                                    id="travelMobile"
+                                    placeholder="10-digit number"
+                                    pattern="[0-9]{10}"
+                                    maxlength="10"
+                                    inputmode="numeric"
+                                    required
+                                    autocomplete="tel"
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1.5 py-1 text-[8px] text-white placeholder-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    
+                        <!-- ROW 2: FROM + TO -->
+                        <div class="grid grid-cols-2 gap-1.5 sm:gap-3">
+                        
+                            <!-- FROM -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelFrom"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-plane-departure mr-1 text-sky-400"></i>
+                                    From
+                            
+                                </label>
+                            
+                                <input
+                                    type="text"
+                                    id="travelFrom"
+                                    placeholder="Departure city"
+                                    required
+                                    autocomplete="off"
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1.5 py-1 text-[8px] text-white placeholder-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        
+                            <!-- TO -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelTo"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-plane-arrival mr-1 text-sky-400"></i>
+                                    To
+                            
+                                </label>
+                            
+                                <input
+                                    type="text"
+                                    id="travelTo"
+                                    placeholder="Destination city"
+                                    required
+                                    autocomplete="off"
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1.5 py-1 text-[8px] text-white placeholder-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    
+                        <!-- ROW 3: ADULTS + CHILDREN -->
+                        <div class="grid grid-cols-2 gap-1.5 sm:gap-3">
+                        
+                            <!-- ADULTS -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelAdults"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-user-group mr-1 text-sky-400"></i>
+                                    Adults
+                            
+                                </label>
+                            
+                                <div
+                                    class="flex w-full items-center justify-between gap-1 rounded-md border border-white bg-white/10 px-1 py-0.5 sm:rounded-lg sm:px-2 sm:py-2">
+                            
+                                    <!-- DECREASE ADULTS -->
+                                    <button
+                                        type="button"
+                                        id="adultsMinus"
+                                        aria-label="Decrease adults"
+                                        class="flex h-4 w-4 shrink-0 cursor-pointer items-center justify-center rounded bg-white/10 text-white transition hover:bg-sky-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-8 sm:w-8">
+                            
+                                        <i class="fa-solid fa-minus text-[7px] sm:text-xs"></i>
+                            
+                                    </button>
+                                
+                                    <!-- ADULTS INPUT -->
+                                    <input
+                                        type="number"
+                                        id="travelAdults"
+                                        value="1"
+                                        min="1"
+                                        max="9"
+                                        step="1"
+                                        required
+                                        inputmode="numeric"
+                                        aria-label="Number of adults"
+                                        class="min-w-0 w-full appearance-none border-0 bg-transparent py-0 text-center text-[9px] font-semibold leading-none text-white outline-none [color-scheme:dark] sm:text-sm"
+                                    >
+                                
+                                    <!-- INCREASE ADULTS -->
+                                    <button
+                                        type="button"
+                                        id="adultsPlus"
+                                        aria-label="Increase adults"
+                                        class="flex h-4 w-4 shrink-0 cursor-pointer items-center justify-center rounded bg-white/10 text-white transition hover:bg-sky-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-8 sm:w-8">
+                                
+                                        <i class="fa-solid fa-plus text-[7px] sm:text-xs"></i>
+                                
+                                    </button>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        
+                            <!-- CHILDREN -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelChildren"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-child-reaching mr-1 text-sky-400"></i>
+                                    Children
+                            
+                                </label>
+                            
+                                <div
+                                    class="flex w-full items-center justify-between gap-1 rounded-md border border-white bg-white/10 px-1 py-0.5 sm:rounded-lg sm:px-2 sm:py-2">
+                            
+                                    <!-- DECREASE CHILDREN -->
+                                    <button
+                                        type="button"
+                                        id="childrenMinus"
+                                        aria-label="Decrease children"
+                                        class="flex h-4 w-4 shrink-0 cursor-pointer items-center justify-center rounded bg-white/10 text-white transition hover:bg-sky-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-8 sm:w-8">
+                            
+                                        <i class="fa-solid fa-minus text-[7px] sm:text-xs"></i>
+                            
+                                    </button>
+                                
+                                    <!-- CHILDREN INPUT -->
+                                    <input
+                                        type="number"
+                                        id="travelChildren"
+                                        value="0"
+                                        min="0"
+                                        max="6"
+                                        step="1"
+                                        required
+                                        inputmode="numeric"
+                                        aria-label="Number of children"
+                                        class="min-w-0 w-full appearance-none border-0 bg-transparent py-0 text-center text-[9px] font-semibold leading-none text-white outline-none [color-scheme:dark] sm:text-sm"
+                                    >
+                                
+                                    <!-- INCREASE CHILDREN -->
+                                    <button
+                                        type="button"
+                                        id="childrenPlus"
+                                        aria-label="Increase children"
+                                        class="flex h-4 w-4 shrink-0 cursor-pointer items-center justify-center rounded bg-white/10 text-white transition hover:bg-sky-500 disabled:cursor-not-allowed disabled:opacity-40 sm:h-8 sm:w-8">
+                                
+                                        <i class="fa-solid fa-plus text-[7px] sm:text-xs"></i>
+                                
+                                    </button>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                                            
+                        <!-- ROW 4: DEPARTURE + RETURN DATE -->
+                        <div class="grid grid-cols-2 gap-1.5 sm:gap-3">
+                        
+                            <!-- DEPARTURE DATE -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelDate"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-regular fa-calendar-days mr-1 text-sky-400"></i>
+                                    Departure
+                            
+                                </label>
+                            
+                                <input
+                                    type="date"
+                                    id="travelDate"
+                                    required
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1 py-1 text-[7px] text-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 [color-scheme:dark] sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        
+                            <!-- RETURN DATE -->
+                            <div class="min-w-0">
+                            
+                                <label for="travelReturnDate"
+                                    class="mb-0 block text-[8px] font-medium text-white sm:mb-1.5 sm:text-sm">
+                            
+                                    <i class="fa-solid fa-calendar-check mr-1 text-sky-400"></i>
+                                    Return Date
+                            
+                                </label>
+                            
+                                <input
+                                    type="date"
+                                    id="travelReturnDate"
+                                    class="min-w-0 w-full rounded-md border border-white bg-white/10 px-1 py-1 text-[7px] text-white outline-none transition focus:border-sky-400 focus:ring-1 focus:ring-sky-400 [color-scheme:dark] sm:rounded-lg sm:px-3 sm:py-2.5 sm:text-sm"
+                                >
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    
+                        <!-- SUBMIT BUTTON -->
+                        <button
+                            type="submit"
+                            class="flex w-full cursor-pointer items-center justify-center gap-1 rounded-md bg-sky-500 px-2 py-1.5 text-[8px] poppins-bold text-white shadow-lg shadow-sky-500/20 transition duration-300 hover:bg-sky-400 sm:gap-2 sm:rounded-lg sm:px-4 sm:py-3 sm:text-sm"
+                        >
+                    
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Flight Enquiry
+                            <span>↗</span>
+                    
+                        </button>
+                    
+                    </form>
+                
+                
+                </div>
+            
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FLIGHT BOOKING FORM JAVASCRIPT
+========================================================= -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("travelEnquiryForm");
+
+    if (!form) return;
+
+
+    // =====================================================
+    // ELEMENTS
+    // =====================================================
+
+    const adultsInput = document.getElementById("travelAdults");
+    const childrenInput = document.getElementById("travelChildren");
+
+    const departureDate = document.getElementById("travelDate");
+    const returnDate = document.getElementById("travelReturnDate");
+
+
+    // =====================================================
+    // PASSENGER COUNTER FUNCTION
+    // =====================================================
+
+    function setupPassengerCounter(inputId, minusId, plusId, min, max) {
+
+        const input = document.getElementById(inputId);
+        const minus = document.getElementById(minusId);
+        const plus = document.getElementById(plusId);
+
+        function updateValue(value) {
+
+            let count = parseInt(value, 10);
+
+            if (isNaN(count)) {
+                count = min;
+            }
+
+            count = Math.max(min, Math.min(max, count));
+
+            input.value = count;
+
+            // Disable minus at minimum
+            minus.disabled = count <= min;
+
+            // Disable plus at maximum
+            plus.disabled = count >= max;
+
+        }
+
+
+        // MINUS BUTTON
+        minus.addEventListener("click", function () {
+
+            const currentValue = parseInt(input.value, 10) || min;
+
+            updateValue(currentValue - 1);
+
+        });
+
+
+        // PLUS BUTTON
+        plus.addEventListener("click", function () {
+
+            const currentValue = parseInt(input.value, 10) || min;
+
+            updateValue(currentValue + 1);
+
+        });
+
+
+        // MANUAL TYPING
+        input.addEventListener("input", function () {
+
+            // Allow temporary empty input while typing
+            if (this.value === "") {
+                minus.disabled = true;
+                plus.disabled = true;
+                return;
+            }
+
+            const value = Number(this.value);
+
+            if (Number.isInteger(value)) {
+                updateValue(value);
+            }
+
+        });
+
+
+        // Validate after manual typing
+        input.addEventListener("blur", function () {
+            updateValue(this.value);
+        });
+
+
+        // Initial value
+        updateValue(input.value);
+
+    }
+
+
+    // ADULTS: 1 TO 9
+    setupPassengerCounter(
+        "travelAdults",
+        "adultsMinus",
+        "adultsPlus",
+        1,
+        9
+    );
+
+
+    // CHILDREN: 0 TO 6
+    setupPassengerCounter(
+        "travelChildren",
+        "childrenMinus",
+        "childrenPlus",
+        0,
+        6
+    );
+
+
+    // =====================================================
+    // CURRENT DATE
+    // =====================================================
+
+    const today = new Date();
+
+    const localToday = new Date(
+        today.getTime() - today.getTimezoneOffset() * 60000
+    ).toISOString().split("T")[0];
+
+
+    // Prevent past departure dates
+    departureDate.min = localToday;
+
+    // Prevent past return dates
+    returnDate.min = localToday;
+
+
+    // =====================================================
+    // RETURN DATE VALIDATION
+    // =====================================================
+
+    departureDate.addEventListener("change", function () {
+
+        const selectedDeparture = this.value;
+
+        returnDate.min = selectedDeparture || localToday;
+
+        if (
+            returnDate.value &&
+            returnDate.value < selectedDeparture
+        ) {
+            returnDate.value = "";
+        }
+
+    });
+
+
+    // =====================================================
+    // MOBILE NUMBER VALIDATION
+    // =====================================================
+
+    const mobileInput = document.getElementById("travelMobile");
+
+    mobileInput.addEventListener("input", function () {
+
+        this.value = this.value.replace(/\D/g, "").slice(0, 10);
+
+    });
+
+
+    // =====================================================
+    // FORM SUBMISSION TO WHATSAPP
+    // =====================================================
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+
+        // Passenger details
+        const name = document.getElementById("travelName").value.trim();
+
+        const mobile = mobileInput.value.trim();
+
+
+        // Journey details
+        const from = document.getElementById("travelFrom").value.trim();
+
+        const to = document.getElementById("travelTo").value.trim();
+
+
+        // Passenger count
+        const adults = adultsInput.value;
+
+        const children = childrenInput.value;
+
+
+        // Travel dates
+        const date = departureDate.value;
+
+        const returnTravelDate = returnDate.value || "Not specified";
+
+
+        // =================================================
+        // VALIDATION
+        // =================================================
+
+        if (mobile.length !== 10) {
+
+            alert("Please enter a valid 10-digit mobile number.");
+
+            mobileInput.focus();
+
+            return;
+
+        }
+
+
+        if (from.toLowerCase() === to.toLowerCase()) {
+
+            alert("Departure and destination cannot be the same.");
+
+            return;
+
+        }
+
+
+        if (Number(adults) < 1 || Number(adults) > 9) {
+
+            alert("Please select between 1 and 9 adults.");
+
+            adultsInput.focus();
+
+            return;
+
+        }
+
+
+        if (Number(children) < 0 || Number(children) > 6) {
+
+            alert("Please select between 0 and 6 children.");
+
+            childrenInput.focus();
+
+            return;
+
+        }
+
+
+        if (returnDate.value && returnDate.value < date) {
+
+            alert("Return date cannot be earlier than departure date.");
+
+            returnDate.focus();
+
+            return;
+
+        }
+
+
+        // =================================================
+        // WHATSAPP MESSAGE
+        // =================================================
+
+        const message =
+`Hello MyTravelSwitch!
+
+I want to enquire about flight booking.
+
+---------- PASSENGER DETAILS ----------
+
+Name: ${name}
+Mobile: ${mobile}
+
+---------- JOURNEY DETAILS ----------
+
+From: ${from}
+To: ${to}
+
+---------- PASSENGERS ----------
+
+Adults: ${adults}
+Children: ${children}
+Total Passengers: ${Number(adults) + Number(children)}
+
+---------- TRAVEL DETAILS ----------
+
+Departure Date: ${date}
+Return Date: ${returnTravelDate}
+
+Please share the available flights, timings and fares.
+
+Thank you!
+MyTravelSwitch`;
+
+
+        // =================================================
+        // OPEN WHATSAPP
+        // =================================================
+
+        const whatsappNumber = "918796050893";
+
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Apna existing page content yahan rakho -->
     <main class="mx-auto max-w-7xl px-4 py-10">
