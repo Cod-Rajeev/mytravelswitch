@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSDO Footer</title>
+    <title>mytravelswitch Footer</title>
 
 
         <!-- =========================================================
@@ -23,55 +23,71 @@
 ========================================================= -->
 
 <footer
-    class="border-t border-amber-700 bg-white px-6"
+    class="relative isolate overflow-hidden border-t border-blue-500 bg-white"
 >
+
+
+    <!-- Subtle Travel Background Image -->
+    <div class="absolute inset-0 -z-20">
+        <img
+            src="/images/footer.jpg"
+            alt=""
+            class="h-full w-full object-cover "
+        >
+    </div>
+
+    <!-- Light Overlay -->
+    <!-- <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/80 to-transparent"></div> -->
+    <div class="absolute inset-0 -z-10 bg-black/85 "></div>
+ 
 
     <!-- =====================================================
          MAIN FOOTER
     ====================================================== -->
 
-    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-10 py-8 lg:grid-cols-5 text-gray-800">
+    <div class="mx-auto grid max-w-7xl grid-cols-2 gap-x-5 gap-y-10 py-8 lg:grid-cols-5 text-gray-200">
 
         <!-- =================================================
              COLUMN 01
              BRAND
         ================================================== -->
-            <div class="col-span-2 lg:col-span-1 outline outline-amber-700 py-2 px-2 rounded-xl shadow-lg shadow-amber-700">
+            <div class="col-span-2 lg:col-span-1">
 
     <!-- BRAND LOGO -->
 
     <a
         href="/"
         class="group flex shrink-0 items-center justify-center gap-2 "
-        aria-label="CSDO home"
+        aria-label="mytravelswitch home"
     >
 
         <!-- LOGO -->
 
         <img
-            src="/images/csdoplt-logo-removebg.png"
-            alt="CSDO logo"
-            class="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03] md:h-32"
+            src="/images/logo.png"
+            alt="mytravelswitch logo"
+            class="h-14 w-auto bg-white/90 rounded-xl object-contain transition-transform duration-300 group-hover:scale-[1.03] md:h-24"
         >
 
       
 
     </a>
 
+    <img src="/images/global.gif" alt="">
+
 
 
 
     <!-- DESCRIPTION -->
 
-    <p
+    <!-- <p
         class="
-            mt-2
             md:text-sm
             text-xs
         "
     >
-       <span class="font-semibold">CSDO</span> is <span class="font-semibold">Core Skill and Dynamic Opportunities Pvt. Ltd.</span> We offer practical, skill-focused courses in candle making, home décor, skin care, cosmetics and makhana products.
-    </p>
+       <span class="font-semibold">MyTravelSwitch</span> is your trusted travel partner for memorable journeys and hassle-free travel planning. We offer flight bookings, hotel reservations, domestic and international tour packages, and visa assistance to make every trip.
+    </p> -->
 </div>
 
         <!-- =================================================
@@ -82,55 +98,55 @@
         <div class="ml-0 md:ml-16 col-span-2 lg:col-span-1">
 
             <h3
-                class="text-lg poppins-bold uppercase text-amber-700">
+                class="text-lg poppins-bold uppercase text-blue-700">
                 Quick Links
             </h3>
 
             
 
-            <ul class="mt-2 space-y-2 poppins-semibold">
+            <ul class="mt-2 space-y-2 text-sm poppins-semibold">
 
                 <li>
                     <a
                         href="/"
-                        class=" inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-                         <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Home
+                        class=" inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                          Home
                     </a>
                 </li>
 
                 <li>
                     <a
-                        href="/ngo-csr.html"
-                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
+                        href="/flights.html"
+                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
                     >
-                       <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> NGO & CSR
+                        Flights
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="/hotels.html"
+                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
+                    >
+                        Hotels
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="/visa.html"
+                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
+                    >
+                        Visa
+                    </a>
+                </li>
+
+
                 <li>
                     <a
                         href="/about-us.html"
-                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
+                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
                     >
-                       <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> About Us
-                    </a>
-                </li>
-
-                <li>
-                    <a
-                        href="/contact-us.html"
-                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
-                    >
-                       <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Contact Us
-                    </a>
-                </li>
-
-
-                <li>
-                    <a
-                        href="/blog/blog.html"
-                        class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
-                    >
-                       <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Blogs
+                        About Us
                     </a>
                 </li>
 
@@ -148,58 +164,93 @@
 
     <div class="col-span-2 lg:col-span-1">
        <h3
-            class="text-lg poppins-bold uppercase text-amber-700">
-            Courses
+            class="text-lg poppins-bold uppercase text-blue-700">
+            Tours Packages
         </h3>
 
-    <ul class="mt-2 space-y-2 poppins-semibold">
+    <ul class="mt-2 space-y-2 text-sm poppins-semibold">
 
         <li>
-            <a href="/courses/candle-making-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Candle Making Course
+            <a href="/tours-packages/kerala-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Kerala Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/soap-making-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Soap Making Course
+            <a href="/tours-packages/manali-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Manali Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/cosmetic-business-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Cosmetic Business Course
+            <a href="/tours-packages/kashmir-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Kashmir Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/makhana-business-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Makhana Business Course
+            <a href="/tours-packages/shimla-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Shimla Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/home-care-making-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Home Care Making Course
+            <a href="/tours-packages/singapore-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Singapore Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/skin-care-making-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Skin Care Making Course
+            <a href="/tours-packages/europe-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Europe Tour Package
             </a>
         </li>
 
         <li>
-            <a href="/courses/hair-care-making-course.html"
-                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700">
-               <i class="fa-solid fa-gem mr-3 text-sm text-amber-700"></i> Hair Care Making Course
+            <a href="/tours-packages/thailand-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Thailand Tour Packages
+            </a>
+        </li>
+
+        <li>
+            <a href="/tours-packages/bali-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Bali Tour Packages
+            </a>
+        </li>
+
+        <li>
+            <a href="/tours-packages/goa-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Goa Tour Packages
+            </a>
+        </li>
+
+        <li>
+            <a href="/tours-packages/dubai-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Dubai Tour Packages
+            </a>
+        </li>
+
+        <li>
+            <a href="/tours-packages/bhutan-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Bhutan Tour Packages
+            </a>
+        </li>
+
+        <li>
+            <a href="/tours-packages/hong-kong-tour-package.html"
+                class="inline-flex items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400">
+                Hong Kong Tour Packages
             </a>
         </li>
 
@@ -215,42 +266,42 @@
         <div class="col-span-2 lg:col-span-1">
 
             <h3
-                class="text-lg poppins-bold uppercase text-amber-700">
+                class="text-lg poppins-bold uppercase text-blue-700">
                 Contact Us
             </h3>
 
             
 
 
-            <div class="mt-2 flex flex-col items-start gap-2 poppins-semibold">
+            <div class="mt-2 flex flex-col items-start gap-2 text-sm poppins-semibold">
 
                 <!-- EMAIL -->
             <a
-                href="mailto:sbhasin.2009@gmail.com"
-                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
+                href="mailto:mytravelswitch@gmail.com"
+                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
             >
-                <i class="fa-solid fa-envelope mr-3 text-amber-700"></i>
-                sbhasin.2009@gmail.com
+                <i class="fa-solid fa-envelope mr-3 text-blue-700"></i>
+                mytravelswitch@gmail.com
             </a>
             
             <!-- MOBILE -->
             <a
-                href="tel:+918920309257"
-                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
+                href="tel:+918048094245"
+                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
             >
-                <i class="fa-solid fa-phone mr-3 text-amber-700"></i>
-                +91 8920309257
+                <i class="fa-solid fa-phone mr-3 text-blue-700"></i>
+                +91 8048094245
             </a>
             
             <!-- ADDRESS -->
             <a
-                href="https://www.google.com/maps/search/?api=1&query=388%2C+Sector+C%2C+Defence+Colony%2C+Ambala+Cantt%2C+Haryana+133001"
+                href="https://www.google.com/maps/place/My+Travel+Switch+Pvt.Ltd./@28.566498,77.24867,672m/data=!3m2!1e3!4b1!4m6!3m5!1s0x390d1d841fefffff:0x945d12867dae2e83!8m2!3d28.566498!4d77.24867!16s%2Fg%2F11hczx2kwn?entry=ttu&g_ep=EgoyMDI2MTEyMy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-amber-700"
+                class="flex w-fit items-center transition-all duration-300 hover:translate-x-2 hover:text-blue-400"
             >
-                <i class="fa-solid fa-location-dot mr-3 text-amber-700"></i>
-                388,  sector C,  defence colony, ambala cantt,  haryana 133001
+                <i class="fa-solid fa-location-dot mr-3 text-blue-700"></i>
+                5, Vinoba Puri, Lajpat Nagar II, Lajpat Nagar, New Delhi, Delhi 110024
             </a>
 
             </div>
@@ -259,12 +310,12 @@
             <!-- SOCIAL ICONS -->
 
             <div
-                class=" mt-5 flex items-center gap-4 outline outline-amber-700 rounded-md justify-center shadow-lg shadow-amber-700 py-3 md:py-0">
+                class=" mt-5 flex items-center gap-4 outline outline-black rounded-md justify-center shadow-2xl shadow-gray-400 py-3 md:py-0">
 
 
                 <!-- WHATSAPP -->
                 <a
-                    href="https://wa.me/8920309257"
+                    href="https://wa.me/918460188483?text=Hello%20MyTravelSwitch%2C%20I%20am%20interested%20in%20your%20travel%20services.%20I%20would%20like%20to%20know%20more%20about%20tour%20packages%2C%20hotel%20bookings%2C%20holiday%20destinations%2C%20and%20travel%20deals.%20Please%20share%20the%20details."
                     aria-label="WhatsApp"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -287,7 +338,7 @@
                                 <!-- INSTAGRAM -->
 
                 <a
-                    href="https://www.instagram.com/csdo_classes"
+                    href="https://www.instagram.com/mytravelswitch"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -329,7 +380,7 @@
                 <!-- FACEBOOK -->
 
                 <a
-                    href="https://www.facebook.com/csdoclasses"
+                    href="https://www.facebook.com/mytravelswitch"
                     aria-label="Facebook"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -341,44 +392,12 @@
 
                 <!-- X -->
 
-                <!-- <a
-                    href="#"
+                <a
+                    href="https://x.com/MtsPackage71470"
                     aria-label="X"
                     class="poppins-bold flex h-6 w-6 items-center justify-center text-lg  transition-all duration-300 hover:scale-110 hover: sm:text-xl"
                 >
                     𝕏
-                </a> -->
-
-
-                <!-- YOUTUBE -->
-
-                <a
-                    href="https://youtube.com/@csdoclasses"
-                    aria-label="YouTube"
-                    class="flex h-6 w-6 items-center justify-center  transition-all duration-300 hover:scale-110 hover: sm:h-7 sm:w-7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <svg
-                        class="h-5 w-5 sm:h-6 sm:w-6"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <path
-                            d="M23.5 6.2a3 3 0 0 0-2.1-2.1
-                            C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6
-                            A3 3 0 0 0 .5 6.2
-                            31 31 0 0 0 0 12
-                            a31 31 0 0 0 .5 5.8
-                            3 3 0 0 0 2.1 2.1
-                            c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6
-                            a3 3 0 0 0 2.1-2.1
-                            A31 31 0 0 0 24 12
-                            a31 31 0 0 0-.5-5.8ZM9.6 15.5v-7L15.8 12l-6.2 3.5Z"
-                        />
-                    </svg>
-
                 </a>
 
 
@@ -397,14 +416,14 @@
             overflow-hidden
             rounded-xl
             border
-            border-amber-700
+            border-blue-700
             bg-neutral-900
-            shadow-lg shadow-amber-700
+            shadow-lg shadow-black
             lg:col-span-1
                 "
         >
     <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45964.619296470424!2d76.7866132216797!3d30.38025600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fb740c35d1e99%3A0xdcb8371f6cc2091e!2sDefence%20Colony%20Sector%20-C!5e1!3m2!1sen!2sin!4v1793425548003!5m2!1sen!2sin"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.6532371911735!2d77.24866999999999!3d28.566498000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d841fefffff%3A0x945d12867dae2e83!2sMy%20Travel%20Switch%20Pvt.Ltd.!5e1!3m2!1sen!2sin!4v1795762482947!5m2!1sen!2sin"
     class="
         block
         h-64
@@ -414,7 +433,7 @@
     allowfullscreen
     loading="lazy"
     referrerpolicy="strict-origin-when-cross-origin"
-    title="CSDO Location"
+    title="mytravelswitch Location"
 ></iframe>
     </div>
 
@@ -425,16 +444,16 @@
          COPYRIGHT
     ====================================================== -->
 
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-1 py-3 text-center md:flex-row border-t border-amber-700"
+        <div class="mx-auto flex flex-col px-10 items-center justify-between gap-1 py-3 text-center md:flex-row border-t border-amber-700 "
         >
 
-            <p class="inter-bold-italic text-sm text-black">
-            &copy; 2026  All Rights Reserved. <span class=" "><a href="/">CSDO</a></span> 
+            <p class="inter-bold-italic text-sm text-white">
+            &copy; 2026  All Rights Reserved. <span class=" text-blue-700 poppins-bold"><a href="/">MyTravelSwitch</a></span> 
         </p>
 
         <span
             id="currentTime"
-            class="time-display text-sm text-amber-700 inter-bold-italic"
+            class="time-display text-sm text-white poppins-bold"
         ></span>
 
         <p class="poppins-bold text-sm text-black">
